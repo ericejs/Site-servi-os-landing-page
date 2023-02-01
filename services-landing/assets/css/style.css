@@ -1,0 +1,970 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 50px;
+    background-color: lightcoral;
+}
+nav {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    flex: 1;
+}
+
+.logo img {
+    height: 81px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.menu-area {
+    display: flex;
+    align-items: center;
+}
+.menu-area ul {
+    display: flex;
+}
+.menu-area li {
+    list-style-type: none;
+    margin-right: 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.li1 :hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    background: rgba(0, 0, 0, 0.534);
+    transition: 0.5s;
+}
+.li2 :hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    background: rgba(0, 0, 0, 0.534);
+    transition: 0.5s;
+}
+.li3 :hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    background: rgba(0, 0, 0, 0.534);
+    transition: 0.5s;
+}
+.li4 :hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    background: rgba(0, 0, 0, 0.534);
+    transition: 0.5s;
+}
+.li5 :hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    background: rgba(0, 0, 0, 0.534);
+    transition: 0.5s;
+}
+
+.pesquisa {
+    margin-right: 25px;
+}
+
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 300px;
+    height: 32px;
+    border:solid 4px #5F9EA0;
+    border-radius:10px;
+}
+
+.barra-pesquisa input {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    color: white;
+    height: 32px;
+    width: 191px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.barra-pesquisa img {
+    width: 28px;
+    margin-left: 10px;
+}
+
+#btnBusca {
+    border:none;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:77px;
+    font-weight:bold;
+    font-size: 15px;
+    background: white;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+}
+.about-me {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.text-section {
+    display: flex;
+    width: 1100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align:center;
+    text-indent: 30px;
+    max-width: 800px ;
+}
+
+.text-section p:hover {
+        transform: scale(1.1);
+}
+
+.img-section {
+   width: 600px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px ;
+}
+.title h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.galery {
+    display: flex;
+    width: 1600px;
+    max-width: 1600px;
+    flex-wrap: wrap;
+}
+
+.galery-img {
+    display: block;
+    margin-bottom: 20px ;
+    margin-right: 20px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.galery-img img {
+    width: 400px;
+    height: 400px;
+    margin: 25px;
+    border-radius: 10%;
+}
+
+.galery-img img:hover {
+    transform: scale(1.1);
+}
+
+.galery-img p {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.534);
+}
+.agendamento {
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+}
+
+.form-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin-top: 20px;
+}
+.button-area-style {
+    display: flex;
+    height: 350px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+fieldset {
+    width: 600px;
+    height: 350px;
+    background-color: lightcoral;
+}
+
+legend, label {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 15px;
+}
+legend {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#nome {
+    margin-left: 15px;
+}
+#email {
+    margin-left: 15px;
+}
+#text {
+    margin-left: 15px;
+}
+
+textarea {
+    margin-left: 15px;
+}
+#btn_submit {
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 80px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+#btn_submit2 {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 280px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.nome {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.email {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.texto {
+    width: 470px;
+    height: 180px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+footer {
+    width: 100%;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 55px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+.rodape p {
+    margin-left: 85px ;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-midia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    margin-right: 85px;
+}
+
+.social-icons a {
+    margin-right: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1024px) and (max-width:1440px) {
+    .menu-area li {
+        font-size: 23px;
+    }
+    .galery {
+        width: 1000px;
+    }
+    .galery-img {
+        display: block;
+        width: 300px;
+    }
+    .galery-img img {
+        width: 260px;
+        height: 260px;
+    }
+    .galery-img p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1300px){
+    .text-section {
+        margin-left: 30px;
+        width: 600px;
+    }
+    .text-section p {
+        font-size: 17px;
+    }
+    .img-section {
+        display: flex;
+        justify-content: center;
+    }
+    .img-section img {
+        width: 290px;
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1200px){
+    .logo {
+        margin-right: 25px;
+    }
+    .text-section {
+        margin-left: 30px;
+        width: 600px;
+    }
+    .text-section p {
+        font-size: 17px;
+    }
+    .img-section {
+        display: flex;
+        justify-content: center;
+    }
+    .img-section img {
+        width: 290px;
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width:1240px) and (max-width:1330px){
+    .menu-area ul li {
+        font-size: 19px;
+    }
+    .logo {
+        margin-right: 25px;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1239px){
+    .menu-area ul li {
+        font-size: 19px;
+    }
+    .logo {
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+   .form-area {
+    width: 500px;
+   }
+   .form-area fieldset {
+    width: 500px;
+   }
+   .button-area {
+    width: 500px;
+   }
+   .button-area fieldset {
+    width: 500px;
+   }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .logo img {
+        width: 146px;
+    }
+    .logo {
+        margin-right: 25px;
+    }
+    .menu-area {
+        margin-left: 20px;
+    }
+    .barra-pesquisa {
+        width: 240px;
+        height: 32px;
+    }
+    .barra-pesquisa input {
+        font-size: 14px;
+        height: 25px;
+        width: 133px;
+    }
+    #btnBusca {
+        width:57px;
+        font-weight:bold;
+        font-size: 14px;
+    }
+    .text-section p {
+        font-size: 17px;
+    }
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .galery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .form-area {
+        width: 500px;
+    }
+    .form-area fieldset {
+        width: 500px;
+    }
+    .button-area {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .button-area fieldset {
+        width: 400px;
+        height: 250px;
+    }
+    .button-area-style {
+        display: flex;
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width:425px) and (max-width:768px){
+    header {
+        margin-bottom: 170px;
+    }
+    #btn-mobile {
+        display: none;
+    }
+    #menu {
+       display: block;
+       position: absolute;
+       width: 100%;
+       top: 75px;
+       right: 0px;
+       background: #e7e7e7;
+       z-index: 1000;
+    }
+    #menu-area.active #menu {
+        display: block;
+    }
+    #menu li {
+        font-size: 20px;
+        padding-bottom: 17px;
+        margin-left: 10px;
+        border-bottom: 2px solid rgba(0, 0, 0, .09);
+    }
+    #menu a {
+        color: black;
+    }
+    .title h1 {
+        font-size: 1.3em;
+    }
+    .text-section {
+       width: 350px;
+    }
+    .text-section p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .img-section {
+        width: 300px;
+    }
+    .img-section img {
+        width: 290px;
+        height: 450px;
+    }
+    .agendamento {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .form-area {
+        width: 500px;
+    }
+    .form-area fieldset {
+        width: 500px;
+    }
+    .button-area fieldset {
+        width: 400px;
+        height: 250px;
+    }
+    .button-area-style {
+        display: flex;
+        height: 250px;
+    }
+    .copyrigth p{
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .social-icons {
+        margin-right: 15px;
+    }
+   
+}
+@media only screen and (min-width:375px) and (max-width:425px) {
+    nav {
+        flex: 0;
+    }
+    #btn-mobile {
+        display: block;
+        margin-right: 7px;
+    }
+    #menu {
+       display: block;
+       position: absolute;
+       width: 100%;
+       top: 75px;
+       right: 0px;
+       background: #e7e7e7;
+       z-index: 1000;
+    }
+    #menu-area.active #menu {
+        display: none;
+    }
+    #menu li {
+        font-size: 20px;
+        padding-bottom: 17px;
+        margin-left: 10px;
+        border-bottom: 2px solid rgba(0, 0, 0, .09);
+    }
+    #menu a {
+        color: black;
+    }
+
+
+
+    .pesquisa {
+        display: none;
+        margin-right: 0px;
+    }
+    .title h1 {
+        font-size: 1.3em;
+    }
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services {
+        width: 100%;
+    }
+    .galery {
+        width: 100%;
+        justify-content: center;
+    }
+    .galery-img {
+        display: block;
+        width: 300px;
+    }
+    .galery-img img {
+        width: 260px;
+        height: 260px;
+    }
+    .galery-img p {
+        font-size: 20px;
+    }
+    .agendamento {
+        display: flex;
+        width: 100%;
+    }
+    .form-area {
+        width: 400px;
+    }
+    .form-area fieldset {
+        width: 400px;
+    }
+    .form-area .texto {
+        width: 350px;
+    }
+    .email {
+        width: 260px;
+    }
+    .button-area fieldset {
+        width: 400px;
+        height: 250px;
+    }
+    .button-area-style {
+        display: flex;
+        height: 250px;
+    }
+    .rodape {
+        height: 60px;
+    }
+    .copyrigth p{
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .social-icons {
+        margin-right: 15px;
+    }
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+    .social-icons a {
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:375px) {
+    header {
+        margin-bottom: 170px;
+    }
+    .pesquisa {
+        display: none;
+        margin-right: 0px;
+    }
+    .title h1 {
+        font-size: 1.1em;
+    }
+    .menu-area {
+        display: block;
+    }
+    .menu-area img {
+        width: 36px;
+        height: 36px;
+    }
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-section {
+        width: 320px;
+    }
+    .img-section {
+        width: 320px;
+    }
+    .img-section img {
+        width: 320px;
+        height: 460px;
+    }
+    .about-me p {
+        font-size: 15px;
+        
+    }
+    .services {
+        width: 100%;
+    }
+    .galery {
+        width: 100%;
+        justify-content: center;
+    }
+    .galery-img {
+        display: block;
+        width: 300px;
+    }
+    .galery-img img {
+        width: 260px;
+        height: 260px;
+    }
+    .galery-img p {
+        font-size: 20px;
+    }
+    .agendamento {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    label {
+        font-size: 17px;
+    }
+    legend {
+        font-size: 17px;
+    }
+    .form-area {
+        width: 280px;
+    }
+    .form-area fieldset {
+        width: 280px;
+    }
+    .form-area .texto {
+        width: 220px;
+        height: 165px;
+    }
+    .nome {
+        width: 230px;
+        margin-left: 15px;
+    }
+    .email {
+        width: 230px;
+        margin-left: 15px;
+    }
+    #btn_submit {
+        width: 60px;
+        height: 22px;
+        font-size: 13px;
+        margin-right: 42px;
+    }
+    .button-area {
+        width: 250px;
+    }
+    .button-area fieldset {
+        width: 250px;
+        height: 250px;
+    }
+    .button-area-style {
+        display: flex;
+        height: 250px;
+    }
+    .button-area-style a {
+        width: 250px;
+    }
+    #btn_submit2 {
+        width: 230px;
+        margin: 0;
+        font-size: 13px;
+    }
+    .rodape {
+        height: 60px;
+    }
+    .copyrigth p{
+        font-size: 13px;
+        margin-left: 15px;
+    }
+    .social-icons {
+        margin-right: 15px;
+    }
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+    .social-icons a {
+        margin-right: 15px;
+    }
+}
+@media only screen and (max-width:320px) {
+    nav {
+        flex: 0;
+    }
+    header {
+        margin-bottom: 170px;
+    }
+    #btn-mobile {
+        display: block;
+        margin-right: 7px;
+    }
+    #menu {
+       display: block;
+       position: absolute;
+       width: 100%;
+       top: 75px;
+       right: 0px;
+       background: #e7e7e7;
+       z-index: 1000;
+    }
+    #menu-area.active #menu {
+        display: none;
+    }
+    #menu li {
+        font-size: 20px;
+        padding-bottom: 17px;
+        margin-left: 10px;
+        border-bottom: 2px solid rgba(0, 0, 0, .09);
+    }
+    #menu a {
+        color: black;
+    }
+    .pesquisa {
+        display: none;
+        margin-right: 0px;
+    }
+    .title h1 {
+        font-size: 1.1em;
+    }
+    .menu-area {
+        display: block;
+    }
+    .menu-area img {
+        width: 36px;
+        height: 36px;
+    }
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-section {
+        width: 320px;
+    }
+    .img-section {
+        width: 320px;
+    }
+    .img-section img {
+        width: 320px;
+        height: 460px;
+    }
+    .about-me p {
+        font-size: 15px;
+        
+    }
+    .services {
+        width: 100%;
+    }
+    .galery {
+        width: 100%;
+        justify-content: center;
+    }
+    .galery-img {
+        display: block;
+        width: 300px;
+        margin-right: 0;
+    }
+    .galery-img img {
+        width: 260px;
+        height: 260px;
+    }
+    .galery-img p {
+        font-size: 20px;
+    }
+    .agendamento {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    label {
+        font-size: 17px;
+    }
+
+    legend {
+        font-size: 17px;
+    }
+
+    .form-area {
+        width: 280px;
+    }
+    .form-area fieldset {
+        width: 280px;
+    }
+    .form-area .texto {
+        width: 220px;
+        height: 165px;
+    }
+    .nome {
+        width: 230px;
+        margin-left: 15px;
+    }
+    .email {
+        width: 230px;
+        margin-left: 15px;
+    }
+    #btn_submit {
+        width: 60px;
+        height: 22px;
+        font-size: 13px;
+        margin-right: 42px;
+    }
+    .button-area {
+        width: 250px;
+    }
+    .button-area fieldset {
+        width: 250px;
+        height: 250px;
+    }
+    .button-area-style {
+        display: flex;
+        height: 250px;
+    }
+    .button-area-style a {
+        width: 250px;
+    }
+    #btn_submit2 {
+        width: 230px;
+        margin: 0;
+        font-size: 13px;
+    }
+    .rodape {
+        height: 60px;
+    }
+    .copyrigth p{
+        font-size: 13px;
+        margin-left: 15px;
+    }
+    .social-icons {
+        margin-right: 15px;
+    }
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+    .social-icons a {
+        margin-right: 15px;
+    }
+}
